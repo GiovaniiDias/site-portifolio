@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/certificados.css">
+    <title>Meu Potifólio</title>
+    <link rel="shortcut icon" href="imagens/favicon_io (Gio)/favicon.ico" type="image/x-icon">
+    
+</head>
+<script>
+     function mudaFoto (foto)
+    {
+        document.getElementById("icone").src=foto;
+    }
+</script>
+
+<body>
+
+    <header>
+<h1>Giovani Dias</h1>
+<h2>Esse é meu portifólio</h2>
+    </header>
+
+    <img id="icone" src="/assets/imagens/certificados.png" alt="home-menu">
+
+<nav id="menu">
+    <ul>
+        <h1>certificados</h1>
+        <li onmouseover="mudaFoto('/assets/imagens/home.png')" onmouseout="mudaFoto('/assets/imagens/certificados.png')" ><a href="/assets/html/index.html">Inicio</a></li>
+        <li onmouseover="mudaFoto('/assets/imagens/experiencias.png')" onmouseout="mudaFoto('/assets/imagens/certificados.png')" ><a href="/assets/html/experiencias.html">Experiencias</a></li>
+        <li onmouseover="mudaFoto('/assets/imagens/certificados.png')" onmouseout="mudaFoto('/assets/imagens/certificados.png')" ><a href="/assets/html/certificados.html">Certificados</a></li>
+        <li onmouseover="mudaFoto('/assets/imagens/galeria.png')" onmouseout="mudaFoto('/assets/imagens/certificados.png')" ><a href="/assets/html/galeria.html">Galeria</a></li>
+    </ul>
+</nav>
+
+
+<main id="certificacao">
+        <ul>
+            <li id="ct01"><span>htmal5</span></li>
+            <li id="ct02"><span>css</span></li>
+            <li id="ct03"><span>javascript</span></li>
+            <li id="ct04"><span>payton</span></li>
+            <li id="ct05"><span>mysql</span></li>
+            <li id="ct06"><span>framework</span></li>
+        </ul>
+
+</main>
+
+
+<footer>
+    <p>Site criado por: Giovani Dias.</p>
+</footer>
+
+    
+</body>
+</html>

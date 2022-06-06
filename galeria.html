@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/galeria.css">
+    <title>Meu Potifólio</title>
+    <link rel="shortcut icon" href="imagens/favicon_io (Gio)/favicon.ico" type="image/x-icon">
+    
+</head>
+<script>
+     function mudaFoto (foto)
+    {
+        document.getElementById("icone").src=foto;
+    }
+</script>
+
+<body>
+
+    <header>
+<h1>Giovani Dias</h1>
+<h2>Esse é meu portifólio</h2>
+    </header>
+    <img id="icone" src="/assets/imagens/galeria.png" alt="home-menu">
+
+    <nav id="menu">
+        <ul>
+            <h1>Menu principal</h1>
+            <li onmouseover="mudaFoto('/assets/imagens/home.png')" onmouseout="mudaFoto('/assets/imagens/galeria.png')" ><a href="/assets/html/index.html">Inicio</a></li>
+            <li onmouseover="mudaFoto('/assets/imagens/experiencias.png')" onmouseout="mudaFoto('/assets/imagens/galeria.png')" ><a href="/assets/html/experiencias.html">Experiencias</a></li>
+            <li onmouseover="mudaFoto('/assets/imagens/certificados.png')" onmouseout="mudaFoto('/assets/imagens/galeria.png')" ><a href="/assets/html/certificados.html">Certificados</a></li>
+            <li onmouseover="mudaFoto('/assets/imagens/galeria.png')" onmouseout="mudaFoto('/assets/imagens/galeria.png')" ><a href="/assets/html/galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+<main id="galeria-foto">
+    <ul>
+        <li id="foto01"><span>dia a dia</span></li>
+        <li id="foto02"><span>casal</span></li>
+        <li id="foto03"><span>esportes</span></li>
+        <li id="foto04"><span>lugares</span></li>
+        <li id="foto05"><span>Familia</span></li>
+        <li id="foto06"><span>Amigos</span></li>
+    </ul>
+</main>
+
+<footer>
+    <p>Site criado por: Giovani Dias.</p>
+</footer>
+
+    
+</body>
+</html>
