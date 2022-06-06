@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Meu Potifólio</title>
+    <link rel="shortcut icon" href="imagens/favicon_io (Gio)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="galeria de foto" href="//css/galeria.css" type="image/jpg">
+</head>
+<script>
+     function mudaFoto (foto)
+    {
+        document.getElementById("icone").src=foto;
+    }
+</script>
+
+<body>
+
+    <header>
+<h1>Giovani Dias</h1>
+<h2>Esse é meu portifólio</h2>
+    </header>
+    <img id="icone" src="/assets/imagens/home.png" alt="home-menu">
+
+<nav id="menu">
+    <ul>
+    <h1>Menu principal</h1>
+    <li onmouseover="mudaFoto('/assets/imagens/home.png')" onmouseout="mudaFoto('/assets/imagens/home.png')" ><a href="/assets/index.html">Inicio</a></li>
+    <li onmouseover="mudaFoto('/assets/imagens/experiencias.png')" onmouseout="mudaFoto('/assets/imagens/home.png')" ><a href="/assets/experiencias.html">Experiencias</a></li>
+    <li onmouseover="mudaFoto('/assets/imagens/certificados.png')" onmouseout="mudaFoto('/assets/imagens/home.png')" ><a href="/assets/certificados.html">Certificados</a></li>
+    <li onmouseover="mudaFoto('/assets/imagens/galeria.png')" onmouseout="mudaFoto('/assets/imagens/home.png')" ><a href="/assets/galeria.html">Galeria</a></li>
+    </ul>
+</nav>
+
+
+   <figure class="foto-legenda">
+    <img src="/assets/imagens/web-format.jpeg" width="200" alt="foto-central">
+    <figcaption>
+       <h2>Olá! Eu sou o Giovani</h2>
+    </figcaption>
+    </figure>
+
+<section id="midia">
+    
+    <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>    
+        </div>
+
+        <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>    
+        </div>
+        <div class="icon instagram">
+            <div class="tooltip"><a href="https://www.instagram.com/giovanii.dias/" target="_blank" rel="external"> Instagram</a></div>
+                <span><i class="fab fa-instagram"></i></span>    
+        </div>
+        <div class="icon github">
+            <div class="tooltip"><a href="https://github.com/GiovaniiDias" target="_blank" rel="external">Github</a></div>
+                <span><i class="fab fa-github"></i></span>    
+        </div>
+        <div class="icon whatsapp">
+            <div class="tooltip"><a href="https://wa.me/5551983405464?text=Eu%20vi%20seu%20portifólio!" target="_blank" rel="external">Whatsapp</a></div>
+                <span><i class="fab fa-whatsapp"></i></span>    
+        </div>
+
+
+    </div>
+    
+</section>
+
+<footer>
+    <p>Site criado por: Giovani Dias.</p>
+</footer>
+
+    
+</body>
+</html>
