@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+main#certificacao {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow:hidden;
+    list-style:inside;
+}
+
+main#certificacao li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    list-style: none;
+    border: 5px solid #fff;
+    border-color: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, .4);
+    -webkit-transition: all .5s ease-in;
+}
+main#certificacao li span{
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000 ;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 30%;
+    font-size: 15px;
+    line-height: 370px;
+    padding:5px;
+}
+main#certificacao li:hover{
+    -webkit-transform: scale(1.5);
+}
+main#galeria-foto li:hover span{
+    opacity: 1;
+    transition: 1s;
+}
+
+main#certificacao li#ct01 {
+    background: url(/assets/imagens/ct01.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+main#certificacao li#ct01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+main#certificacao li#ct02 {
+    background: url(/assets/imagens/ct02.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+main#certificacao li#ct02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+
+ main#certificacao li#ct03 {
+    background: url(/assets/imagens/ct03.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+main#certificacao li#ct03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+main#certificacao li#ct04 {
+    background: url(/assets/imagens/ct04.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+
+}
+main#certificacao li#ct04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+main#certificacao li#ct05 {
+    background: url(/assets/imagens/ct05.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+
+}
+main#certificacao li#ct05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+main#certificacao li#ct06 {
+    background: url(/assets/imagens/ct06.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+main#certificacao li#ct06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}

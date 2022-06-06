@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Titillium+Web&display=swap');
+@font-face {
+    font-family:'Great Vibes', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    src: url('/assets/fontes/Great_Vibes\,Titillium_Web/');
+    font-weight: normal;
+}
+
+
+
+:root {
+    --cor0:#010012;
+    --cor1:#020015;
+    --cor2:#192988;
+    --cor3:#480064;
+    --cor4:#370155;
+    --cor5: #298ea6;
+    --cor6: #0b404d;
+
+    --corlog0:#D110E7;
+    --corlog1:#05114B;
+
+    --fonte-padrao: Arial, Verdana, helvetica, Sans-serif;
+    --fonte-logo: 'Great Vibes', cursive;
+   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 15px 0px;
+    text-align:justify;
+
+}
+
+
+body {
+height: 0px;
+background-image:url("/assets/imagens/blue-grad.jpg");
+background-repeat: no-repeat ;
+background-attachment: fixed;
+background-position: center center;
+background-size: 100%;
+border: 0px;
+padding: 10px;
+margin: 10px;
+}
+
+header {
+    min-height: 100px;
+    text-align: center;
+}
+
+header > h1 {
+    color: #5469e6fe;
+    font-family: var(--fonte-logo);
+    margin-top: 25px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+
+
+}
+
+header > h2{
+    color: #6678cfd5;
+    font-variant: small-caps;
+    
+}
+img#icone {
+    top: 5%;
+    left: 8%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+   
+}
+
+nav#menu ul {
+
+    list-style: none;
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    position: absolute;
+    top: 90px;
+    
+
+}
+nav#menu{
+    
+display: block;
+
+}
+
+
+
+nav#menu li a {
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 2px;
+    border-radius: 20px;
+    text-decoration: none;
+   
+
+}
+nav#menu a:hover{
+    animation: pulsate 1s ease-in-out;
+
+    
+}
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 25px #5dd0ff, 0 0 50px #4e00c2;
+        
+    }
+}
+nav#menu h1{
+    display: none;
+
+}
+figure.foto-legenda{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: 1px  #fff;
+    border-radius: 30%;
+    box-shadow: 1px 1px 4px black;
+    margin: 0px auto;
+    
+}
+figure.foto-legenda img{
+    display: block;
+    border-radius: 30%;
+    width: 300px;
+    height: 400px;
+    margin: 0px auto;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 30%;
+    box-sizing:border-box;
+    transition: opacity 1s;
+
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+figure.foto-legenda figcaption h2{
+    margin-top: 350px;
+    text-align: center;
+}
+
+ 
+
+ main h2{
+    color:#ffffff;
+    position: relative;
+    text-align: center;
+ }
+
+section#midia {
+
+    padding: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    position: relative;
+    text-align: center;
+   top:20px;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0vh;
+}
+.wrapper .icon{
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.wrapper .icon i{
+    color: #fff;
+    transition: .4s linear;
+}
+.wrapper .icon::before,
+.wrapper .icon::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+.wrapper .icon:hover::before {
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+    color: #fff;
+}
+.wrapper .icon:hover::after {
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+    color: #fff;
+}
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0.1);
+    opacity: 0;
+    pointer-events:visible;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.wrapper .icon:hover .tooltip {
+    top:-45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
+footer{
+   
+    height: 15px;
+    
+}
+
+footer p { 
+    height: 5px;
+     border-top:solid  #010207;
+    color: lightslategrey;
+    text-align:center;
+    padding: 5px;
+    
+   
+}
