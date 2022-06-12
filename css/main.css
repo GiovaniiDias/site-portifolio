@@ -30,6 +30,9 @@
     margin: 0px;
     padding: 0px;
 }
+htma, body{
+    min-height: 100%vh;
+}
 p{
     margin: 15px 0px;
     text-align:justify;
